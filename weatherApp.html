@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <h2>Weather</h2>
+    <link rel="stylesheet" href="style.css" />
+    <script src='weatherApp.js' defer></script>
+
+      <p>Please select your preferred location specification type:</p>
+      <div id="locationType">
+        <input type="radio" id="L1"
+               name="locType" value=1 checked>
+        <label for="L1">City,Country</label>
+        <input type="radio" id="L2"
+               name="locType" value=2>
+        <label for="L2">Zip Code</label>
+        <input type="radio" id="L3"
+               name="locType" value=3>
+        <label for="L3">Lat/Long</label>
+      </div>
+    <div>
+      <input name="location" type="text" />
+    </div>
+    <div>
+      <button class="btn-submit">Submit</button>
+    </div>
+  </head>
+  <body>
+    <h2>Results</h2>
+    <div class="column" id="main-content"></div>
+  </body>
+</html>
